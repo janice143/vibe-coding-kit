@@ -6,22 +6,9 @@ It is **not** the design system. Visual tokens and component shapes belong in yo
 
 It is the middle layer: **concrete, factual, scoped** — the kind of thing that earns a row in this README only if it would otherwise be re-discovered the hard way.
 
-## About the example entries shipped with this kit
+## What this kit ships
 
-The 21 entries under `patterns/`, `anti-patterns/`, `platforms/`, `decisions/`, and `ai-coding/` are real entries from the project that produced this kit (DayRetro / 随心迹, a Taro + React WeChat Mini Program). They are included as **worked examples** so you can see what a good entry looks like.
-
-Before using this kit in a new project:
-
-1. **Keep the templates** in `_templates/`.
-2. **Delete the example entries** that do not apply to your stack or product.
-3. **Replace the surviving examples** with your own facts as your project hits the same bugs.
-4. **Add new entries** as your project surfaces new platform facts or validated patterns.
-
-The `platforms/` entries lean weapp / H5 / Taro because that is what the source project shipped. If you target different platforms, replace them.
-
-The `decisions/` entries are project-specific by design (decision logs are local). Even the source project does not expect you to inherit its storage strategy.
-
-The `patterns/`, `anti-patterns/`, and `ai-coding/` entries are the most generally applicable — those often survive a project change with light editing.
+This kit ships **only the templates** (`_templates/`). It deliberately ships **no example entries** — every project's knowledge base is project-specific by design. Copy a template, fill it in with the first fact your project surfaces, and let the directory grow from there.
 
 ## When to add an entry
 
@@ -43,18 +30,18 @@ Do not add an entry when:
 ```text
 .knowledge/
 ├── README.md            ← this file
-├── index.md             ← searchable index, one line per entry
-├── _templates/
+├── index.md             ← optional one-line index, sorted by reference (create when you have ≥10 entries)
+├── _templates/          ← entry templates (do not delete)
 │   ├── pattern.md          ← template for a validated reusable pattern
 │   ├── anti-pattern.md     ← template for a known-bad shape to avoid
 │   ├── platform-note.md    ← template for a platform-runtime fact
 │   ├── decision.md         ← template for a recorded decision
 │   └── ai-coding-note.md   ← template for a coding-agent behavior observation
-├── patterns/            ← validated, project-specific patterns
-├── anti-patterns/       ← shapes that cost time and should not recur
-├── platforms/           ← weapp / H5 / Taro runtime facts (or your equivalents)
-├── ai-coding/           ← facts about working with coding agents
-└── decisions/           ← durable decisions, with date and reason
+├── patterns/            ← validated, project-specific patterns (you create)
+├── anti-patterns/       ← shapes that cost time and should not recur (you create)
+├── platforms/           ← weapp / H5 / Taro runtime facts (you create)
+├── ai-coding/           ← facts about working with coding agents (you create)
+└── decisions/           ← durable decisions, with date and reason (you create)
 ```
 
 Each entry is a single Markdown file. Filenames are short kebab-case names (`rpx-in-js-css-vars.md`, not `the-time-i-spent-3-hours-on-rpx.md`). The first line of each file is a one-sentence summary that ends up in `index.md`.

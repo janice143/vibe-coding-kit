@@ -2,7 +2,7 @@
 
 > A starter kit for AI-assisted coding — `AGENTS.md` + skills + a knowledge base, distilled from real production pain.
 
-Six procedural skills, twenty-one knowledge entries, one collaboration contract. Total weight: ~30 small Markdown files. Designed to be copied wholesale into your project, then grown with your own entries.
+Six procedural skills, one collaboration contract, and a starter knowledge base (templates only — no example entries). Total weight: ~15 small Markdown files. Designed to be copied wholesale into your project, then grown with your own entries.
 
 ## Why this kit exists
 
@@ -37,13 +37,7 @@ vibe-coding-kit/
 │   └── task-size-router/              ← small / medium / large process
 └── .knowledge/
     ├── README.md                      ← when to add an entry
-    ├── index.md                       ← one-line index, sorted by reference
-    ├── _templates/                    ← 5 templates: pattern, anti-pattern, platform-note, decision, ai-coding-note
-    ├── patterns/                      ← 5 validated patterns
-    ├── anti-patterns/                 ← 5 known-bad shapes
-    ├── platforms/                     ← 4 weapp / H5 / Taro runtime facts
-    ├── decisions/                     ← 4 project decisions
-    └── ai-coding/                     ← 3 coding-agent behaviors to intercept
+    └── _templates/                    ← 5 templates: pattern, anti-pattern, platform-note, decision, ai-coding-note
 ```
 
 ## The 3-layer model
@@ -79,18 +73,17 @@ Then:
 
 1. Update `AGENTS.md` §Repository map to point at your project's actual paths and commands.
 2. Update `AGENTS.md` §Source of truth if your project has a design-system spec.
-3. Replace the example entries in `.knowledge/` with your own (or delete them).
 
 ## Quick start
 
 1. Copy `AGENTS.md` and `CLAUDE.md` to your project root.
 2. Copy the skills you want into `.claude/skills/<name>/` of your project.
-3. Initialize `.knowledge/` with the templates; delete or replace the example entries.
+3. Copy `.knowledge/` (with its `_templates/` folder) into your project root.
 4. Add new entries as bugs get diagnosed or patterns get validated — `.knowledge/README.md` explains the criteria.
 
 ## Provenance
 
-These files were distilled from a real 26-day, ~150-commit Taro + React WeChat Mini Program project (DayRetro / 随心迹). The `.knowledge/` entries were written as the project hit each bug, not retroactively. They are honest examples showing the format — replace the DayRetro specifics with your own.
+These files were distilled from real production pain across frontend projects (Taro + React WeChat Mini Programs, web apps, and others). The rules, skills, and templates reflect decisions made when bugs cost hours to diagnose, not theoretical best practice. The `.knowledge/` ships **only templates** because project-specific facts only earn their place once a real project has hit the bug.
 
 ## What this kit is not
 

@@ -2,7 +2,7 @@
 
 > 给 AI 辅助编程准备的最小起手套件 —— `AGENTS.md` + 流程 Skills + 知识库，从真实项目的踩坑里蒸馏出来。
 
-6 个流程 Skills、21 条知识条目、1 份协作契约。总共约 30 个 Markdown 文件。设计目标：整包复制到你的项目里，再用你自己的真实踩坑把内容长出来。
+6 个流程 Skills、1 份协作契约、1 套入门级知识库（只含模板，不带示例条目）。总共约 15 个 Markdown 文件。设计目标：整包复制到你的项目里，再用你自己的真实踩坑把内容长出来。
 
 ## 为什么会有这个套件
 
@@ -37,13 +37,7 @@ vibe-coding-kit/
 │   └── task-size-router/              ← 小 / 中 / 大任务的流程选择
 └── .knowledge/
     ├── README.md                      ← 何时该新增一条
-    ├── index.md                       ← 一行索引，按"最常被引用"排序
-    ├── _templates/                    ← 5 个模板：pattern / anti-pattern / platform-note / decision / ai-coding-note
-    ├── patterns/                      ← 5 条已验证可复用的模式
-    ├── anti-patterns/                 ← 5 条踩过的坑
-    ├── platforms/                     ← 4 条 weapp / H5 / Taro 的运行事实
-    ├── decisions/                     ← 4 条项目决策
-    └── ai-coding/                     ← 3 条 AI 行为观察
+    └── _templates/                    ← 5 个模板：pattern / anti-pattern / platform-note / decision / ai-coding-note
 ```
 
 ## 三层模型
@@ -81,18 +75,17 @@ cp -r .knowledge /path/to/your-project/.knowledge
 
 1. 改 `AGENTS.md` §Repository map，指向你项目里实际的目录和命令。
 2. 如果项目里有 `docs/DESIGN-SYSTEM.md`，更新 `AGENTS.md` §Source of truth。
-3. 把 `.knowledge/` 里的示例条目替换成你自己的（或者先删掉）。
 
 ## 起步
 
 1. 把 `AGENTS.md` 和 `CLAUDE.md` 复制到项目根。
 2. 把想用的 skills 复制到项目里的 `.claude/skills/<name>/`。
-3. 用模板初始化 `.knowledge/`，删掉或替换示例条目。
+3. 把 `.knowledge/`（含 `_templates/`）复制到项目根。
 4. 每次诊断出一个 bug、验证出一个模式时，新增一条 —— `.knowledge/README.md` 里有判定标准。
 
 ## 来源
 
-这套文件蒸馏自一个真实的 26 天、约 150 次 commit 的 Taro + React 微信小程序项目（DayRetro / 随心迹）。`.knowledge/` 里的条目都是项目踩到那个坑时写下来的，不是事后凑的。它们是诚实的示例 —— 把 DayRetro 特有的内容替换成你自己的就行。
+这套文件蒸馏自真实项目里花了几小时才诊断出来的 bug（Taro + React 微信小程序、Web 应用等）。规则、流程和模板是踩坑出来的产物，不是理论最佳实践。`.knowledge/` 只发模板 —— 因为项目特有事实只有项目自己踩到了才有意义。
 
 ## 这个套件不是什么
 

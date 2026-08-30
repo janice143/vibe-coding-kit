@@ -106,10 +106,10 @@ These come from real bugs in this project. Each row is the AI's first draft, the
 
 | Original (leaky) | Leak | Rewrite |
 |---|---|---|
-| "为了让复盘更加轻松，我们现在将每日总结调整为今日回顾。" | full leak: rationale + history + decision-maker | "回顾今天。" |
-| "新的记录方式更加简洁，让你专注于真正重要的内容。" | "新的" implies an old, "让你专注于" is rationale | "想到什么，就先记一条。" |
-| "现在你不需要再完成完整复盘了。" | "现在" + "再" reveal a prior constraint | "想到什么，就先记一条。" |
-| "每日总结（已升级为 AI 智能回顾）" | parenthetical version history | "AI 回顾" |
+| "We've redesigned the editor to make writing feel effortless." | full leak: rationale + history + decision-maker | "Write today's entry." |
+| "A new, cleaner flow lets you focus on what matters." | "new" implies an old, "lets you focus" is rationale | "Capture what comes to mind." |
+| "You no longer have to fill in every field." | "no longer" reveals a prior constraint | "Fill what you want." |
+| "Daily Log (now with AI recap)" | parenthetical version history | "AI recap" |
 | "我们已优化加载速度" | first-person plural + superlative | (drop entirely — speed is not a user-facing claim) |
 | "新增 Mood 维度" | "新增" implies prior absence | "今天感觉如何？" |
 | "由于后端重构，部分功能暂时不可用" | rationale + technical detail | "暂时无法连接，请稍后重试。" |
